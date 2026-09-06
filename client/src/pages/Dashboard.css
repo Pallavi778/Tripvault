@@ -1,0 +1,43 @@
+.dashboard {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f7fb;
+     background-image: url("../assets/tripvault-sunset.png"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+.dashboard::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.60);
+
+    z-index: 0;
+}
+
+
+.dashboard-title {
+    margin: 0;
+    padding: 30px 50px;
+    background: rgba(183, 166, 166, 0.8);
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    color: black;
+    font-size: 36px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.logout-button{
+    background-color: rgb(192, 65, 65);
+    color: black;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+}

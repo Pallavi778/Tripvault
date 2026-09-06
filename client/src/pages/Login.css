@@ -1,0 +1,119 @@
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("../assets/tripvault-sunset.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+/* Dark overlay over the background image */
+.login-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.60);
+
+    z-index: 0;
+}
+
+.login-form {
+    background: rgba(255, 255, 255, 0.40);
+    width: 370px;
+    padding: 30px 40px;
+    border-radius: 5%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 18px;
+
+    border: 2px solid black;
+    box-sizing: border-box;
+
+    position: relative;
+    z-index: 1;
+}
+
+.login-form h1 {
+    margin: 0;
+    text-align: center;
+    color: rgb(64, 105, 210);
+}
+
+.login-form h2 {
+    margin: 0;
+    text-align: center;
+    color: rgb(92, 77, 77);
+    font-size: 20px;
+}
+
+.login-form input {
+    width: 260px;
+    height: 40px;
+    padding: 0 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    box-sizing: border-box;
+}
+
+.login-button {
+    width: 260px;
+    height: 40px;
+
+    background-color: rgb(64, 105, 210);
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-form p {
+    margin: 0;
+    text-align: center;
+    color: black;
+}
+
+.password-field {
+    position: relative;
+    width: 260px;
+}
+
+.password-field input {
+    width: 100%;
+    padding-right: 45px;
+    box-sizing: border-box;
+}
+
+.password-field button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 45px;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    background: transparent;
+    padding: 0;
+
+    cursor: pointer;
+}
