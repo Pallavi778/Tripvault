@@ -1,0 +1,10 @@
+const express = require('express');
+const tripController = require('../controllers/tripControllers');
+const { protect } = require('../middlewares/authMiddleware');
+const router = express.Router();
+router.post('/',protect,tripController.createTrip);
+router.get('/',protect,tripController.getTrips);
+router.get('/:id',protect,tripController.getTrip);
+router.put('/:id',protect,tripController.updateTrip);
+router.delete('/:id',protect,tripController.deleteTrip);
+module.exports = router;

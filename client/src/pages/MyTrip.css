@@ -1,0 +1,72 @@
+.mytrip-page {
+    min-height: 100vh;
+    background-image: url("../assets/tripvault-sunset.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 100px 7%;
+    box-sizing: border-box;
+}
+.mytrip-header {
+    margin-bottom: 40px;
+    color: white;
+}
+
+.mytrip-header1 {
+    display: inline-block;
+    background: #f5b7a0;
+    height: 48px;
+    width: 170px;
+    border-radius: 5px;
+}
+
+.mytrip-header1 h1 {
+    margin: 0;
+    font-size: 35px;
+    font-weight: 600;
+    padding: 8px 17px;
+    letter-spacing: -1px;
+    color: black;
+}
+
+.mytrip-header p {
+    margin: 10px 0 0;
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.78);
+}
+.trip-card {
+    position: relative;
+    z-index: 1;
+    width: 360px;
+    padding: 25px;
+    box-sizing: border-box;
+
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    /* it makes the background blur , so it will make the background blur for trip cards  */
+
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 18px;
+
+    color: white;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+.trip-card h2 {
+    margin: 0 0 14px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.trip-card p {
+    margin: 9px 0;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 15px;
+}
+.trips{
+     justify-content: space-evenly;
+     display: flex;
+    flex-direction: row;
+    align-items: center;
+}

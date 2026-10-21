@@ -1,0 +1,132 @@
+.edit-trip-page {
+    min-height: 100vh;
+    background-image: url("../assets/tripvault-sunset.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 100px 7%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Heading */
+.edit-trip-page h1 {
+    margin: 0;
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.edit-trip-page > p {
+    margin: 10px 0 30px;
+    color: #ffffff;
+    font-size: 17px;
+}
+
+/* Form */
+.edit-trip-page form {
+    width: 100%;
+    max-width: 550px;
+
+    background: rgba(255, 255, 255, 0.95);
+    padding: 35px;
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+.edit-trip-page label {
+    margin-bottom: 7px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Inputs */
+.edit-trip-page input,
+.edit-trip-page textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 12px 14px;
+    margin-bottom: 20px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-family: inherit;
+
+    outline: none;
+}
+
+/* Focus effect */
+.edit-trip-page input:focus,
+.edit-trip-page textarea:focus {
+    border-color: #e67e22;
+    box-shadow: 0 0 5px rgba(230, 126, 34, 0.3);
+}
+
+/* Description */
+.edit-trip-page textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Rating */
+.rating-stars {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.rating-stars span {
+    font-size: 30px;
+    cursor: pointer;
+    color: #f5a623;
+}
+
+/* Update button */
+.edit-trip-page button {
+    padding: 13px;
+    border: none;
+    border-radius: 9px;
+
+    background: #e67e22;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.edit-trip-page button:hover {
+    background: #cf6413;
+    transform: translateY(-2px);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .edit-trip-page {
+        padding: 60px 20px;
+    }
+
+    .edit-trip-page h1 {
+        font-size: 32px;
+    }
+
+    .edit-trip-page form {
+        padding: 25px;
+    }
+}

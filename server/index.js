@@ -3,6 +3,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const express = require('express');
 const authRoutes = require('./routes/authRoutes');
+const tripRoutes = require('./routes/tripRoutes')
 const app = express();
 app.use(cors({
   origin: 'http://localhost:5173'
@@ -22,3 +23,4 @@ const connectDB = async () =>{
 };
 connectDB();
 app.use('/api/auth',authRoutes);
+app.use('/api/trips',tripRoutes);
